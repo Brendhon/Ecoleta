@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{# Setando o Style no Layout #}
+{% block styles %}
+    <link rel="stylesheet" href="/styles/searchResults.css">
+{% endblock styles %}
+
+{% block title %}
+    <title>Resultado da Pesquisa</title>
+{% endblock title %}
+
+{# Setando uma variavel #}
+{% set pageId = "page-searchResults" %}
+
+{# Conteudo da Pagina #}
+{% block content %}
+    <!-- Criar um html dinamico - Puxar html de outro arquivo usando nunjucks -->
+    {% include "partials/pageHeader.html" %}
+
+    <main>
+
+        <h4>
+            <strong>2 pontos</strong>
+            encontrados
+        </h4>
+
+        <div class="cards">
+            <div class="card">
+                <img src="/assets/wallpapers/1440x900.jpg" alt="Colectoria">
+                <h1>Colectoria</h1>
+                <h3>Resídos Eletrônicos, Lâmpadas</h3>
+                <p>
+                    Rio do Sul, Santa Catarina
+                    <br/>
+                    Guilherme, Avenida
+                    <br/>
+                    N° 260
+                </p>
+            </div>
+            <div class="card">
+                <img src="/assets/wallpapers/2560x1600.jpg" alt="Papersider">
+                <h1>Papersider</h1>
+                <h3>Papeis e Papelão</h3>
+                <p>
+                    Rio do Sul, Santa Catarina
+                    <br/>
+                    Guilherme, Avenida
+                    <br/>
+                    N° 260
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+{% endblock content %}
