@@ -19,38 +19,37 @@
 
     <main>
 
-        <h4>
-            <strong>2 pontos</strong>
-            encontrados
-        </h4>
+        {% if total>0 %}
+            <h4>
+                <strong>{{total}} pontos</strong>
+                encontrados
+            </h4>
 
-        <div class="cards">
-            <div class="card">
-                <img src="/assets/wallpapers/1440x900.jpg" alt="Colectoria">
-                <h1>Colectoria</h1>
-                <h3>Resídos Eletrônicos, Lâmpadas</h3>
-                <p>
-                    Rio do Sul, Santa Catarina
-                    <br/>
-                    Guilherme, Avenida
-                    <br/>
-                    N° 260
-                </p>
-            </div>
-            <div class="card">
-                <img src="/assets/wallpapers/2560x1600.jpg" alt="Papersider">
-                <h1>Papersider</h1>
-                <h3>Papeis e Papelão</h3>
-                <p>
-                    Rio do Sul, Santa Catarina
-                    <br/>
-                    Guilherme, Avenida
-                    <br/>
-                    N° 260
-                </p>
-            </div>
+            <div class="cards">
 
-        </div>
+                {% for place in places %}
+                    <div class="card">
+                        <img src={{place.image}} alt={{place.name}}>
+                        <h1>{{place.name}}</h1>
+                        <h3>{{place.items}}</h3>
+                        <p>
+                            {{place.city}}, {{place.state}}
+                            <br/>
+                            {{place.address}}
+                            <br/>
+                            {{place.address2}}
+                        </p>
+                    </div>
+                {% endfor %}
+
+            </div> 
+
+        {% else %}
+        
+            <h4>Local não possui pontos de coleta</h4>
+
+        {% endif %}
+   
 
     </main>
 {% endblock content %}
