@@ -39,7 +39,7 @@ Recomendações:
 ```bash
 
 # Clone este repositório
-$ git clone https://github.com/Brendhon/BeTheHero.git
+$ git clone https://github.com/Brendhon/Ecoleta.git
 
 # Acesse a pasta do projeto
 
