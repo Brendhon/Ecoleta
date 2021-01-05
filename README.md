@@ -6,7 +6,7 @@
 
 ## 🎓 Sobre o projeto
 
-Aplicação para conectar empresas e entidades de coleta de resíduos orgânicos e inorgânicos as pessoas que precisam descartar seus resíduos de maneira ecológica 
+Aplicação para conectar empresas e entidades de coleta de resíduos orgânicos e inorgânicos as pessoas que precisam descartar seus resíduos de maneira ecológica.
 
 Projeto realizado durante a primeira edição do evento **Next Level Week** oferecido pela  **[Rocketseat](https://rocketseat.com.br/)**.
 
