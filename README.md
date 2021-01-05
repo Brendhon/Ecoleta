@@ -21,7 +21,7 @@ As seguintes tecnologias foram utilizadas na construção do projeto:
 - **[Nunjucks](https://mozilla.github.io/nunjucks/)**
 - **[SQLite](https://www.sqlite.org/index.html)**
 
-> Veja o arquivo **[package.json](https://github.com/Brendhon/BeTheHero/blob/master/backend/package.json)**
+> Veja o arquivo **[package.json](https://github.com/Brendhon/Ecoleta/blob/master/package.json)**
 
 ### Utilitários
 - Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
